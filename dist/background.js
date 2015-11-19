@@ -6,7 +6,6 @@ var updateCounter = function (counter) {
 
 
 
-
 chrome.runtime.onMessage.addListener(
   function (request, sender, sendResponse) {
     parseItems = [];
