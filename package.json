@@ -1,0 +1,23 @@
+{
+  "name": "linkcheck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify ./src/app.js -o ./dist/linkchecker.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "babelify": "^7.2.0",
+    "watchify": "^3.6.1"
+  }
+}

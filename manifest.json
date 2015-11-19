@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Moba8net-linkchecker",
+  "description": "終了プログラムをチェックするための機能拡張です",
+  "version": "0.0.1",
+  "background": {
+    "scripts": [
+      "./dist/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "./m8.png",
+    "default_title": "M8終了PGチェック",
+    "default_popup": "./dist/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["./dist/linkchecker.js"]
+    }
+  ]
+}
